@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YHPhotos 文档站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- 侧边栏 -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="brand-logo">
+                    <img src="images/logo.png" alt="YHPhotos Logo" class="logo">
+                    <h2>YHPhotos</h2>
+                </div>
+                <button class="sidebar-toggle" id="sidebarToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="sidebar-content">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="搜索文档...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <nav class="sidebar-nav">
+                    <ul class="nav-list" id="navList">
+                        <li class="nav-item active">
+                            <a href="#welcome" data-file="welcome.md">
+                                <i class="fas fa-home"></i>
+                                <span>欢迎使用</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#getting-started" data-file="getting-started.md">
+                                <i class="fas fa-rocket"></i>
+                                <span>快速开始</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#features" data-file="features.md">
+                                <i class="fas fa-star"></i>
+                                <span>功能特性</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#api" data-file="api.md">
+                                <i class="fas fa-code"></i>
+                                <span>API 文档</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#examples" data-file="examples.md">
+                                <i class="fas fa-lightbulb"></i>
+                                <span>使用示例</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+        <!-- 主内容区 -->
+        <main class="main-content">
+            <div class="content-header">
+                <div class="header-left">
+                    <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="header-brand">
+                        <img src="images/logo.png" alt="YHPhotos Logo" class="header-logo">
+                        <h1 id="pageTitle">欢迎使用 YHPhotos</h1>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" title="切换主题 (Ctrl/Cmd + D)">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <button class="auto-theme-toggle" id="autoThemeToggle" title="自动主题切换">
+                        <i class="fas fa-clock"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="content-body">
+                <div id="markdownContent" class="markdown-body">
+                    <!-- Markdown 内容将在这里动态加载 -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- 加载提示 -->
+    <div class="loading" id="loading">
+        <div class="loading-spinner"></div>
+        <p>加载中...</p>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
