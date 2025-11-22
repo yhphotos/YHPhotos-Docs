@@ -1,4 +1,4 @@
-# 欢迎使用 YHPhotos
+# 欢迎使用 YHPhotos-docs
 
 欢迎来到 **YHPhotos** 文档站！这里是一个现代化、美观的文档展示平台，专门为展示您的 Markdown 文档而设计。
 
