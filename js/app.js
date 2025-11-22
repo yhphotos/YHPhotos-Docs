@@ -257,7 +257,7 @@ class DocsApp {
 ### 1. 下载项目
 
 \`\`\`bash
-git clone https://github.com/your-repo/yhphotos-docs.git
+git clone https://github.com/yhphotos/YHPhotos-Docs.git
 cd yhphotos-docs
 \`\`\`
 
@@ -625,10 +625,7 @@ app.cacheSize = 10; // 最大缓存 10 个文档
     getFileTitle(fileName) {
         const titles = {
             'welcome.md': '欢迎使用',
-            'getting-started.md': '快速开始',
-            'features.md': '功能特性',
-            'api.md': 'API 文档',
-            'examples.md': '使用示例'
+            'CoC.md': 'Code of Conduct - 行为准则'
         };
         return titles[fileName] || fileName.replace('.md', '');
     }
